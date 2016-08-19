@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Space Cat</title>
+	<script src="phaser.min.js"></script>
+	<script src="Boot.js"></script>
+	<script src="Preloader.js"></script>
+	<script src="MainMenu.js"></script>
+	<script src="Game.js"></script>
+	<script src="Win.js"></script>
+	<script src="Lose.js"></script>
+	<style>
+	.container{
+		width:800px;
+		margin:0 auto;
+	}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<div id="gameContainer"></div>
+</div>
+<script type="text/javascript">
+
+window.onload = function() {
+	var game = new Phaser.Game(800, 600, Phaser.AUTO, 'gameContainer');
+	game.state.add('Boot', BasicGame.Boot);
+	game.state.add('Preloader', BasicGame.Preloader);
+	game.state.add('MainMenu', BasicGame.MainMenu);
+	game.state.add('Game', BasicGame.Game);
+	game.state.add('Win', BasicGame.Win);
+	game.state.add('Lose', BasicGame.Lose);
+	game.state.start('Boot');
+
+};
+
+</script>
+
+</body>
+</html>
