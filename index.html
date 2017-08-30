@@ -70,6 +70,7 @@
                       <li><a href="#sectionIntro" class="easing">Home</a></li>
                       <li><a href="#sectionAbout" class="easing">About</a></li>
                       <li><a href="#sectionExperience" class="easing">Experience</a></li>
+                      <li><a href="#sectionPortfolio" class="easing">Portfolio</a></li>
                       <li><a href="#sectionMisc" class="easing">Misc</a></li>
                       <li><a href="#sectionEducation" class="easing">Education</a></li>
                     </ul>
@@ -188,13 +189,13 @@
 
         <div class="col-md-9 col-sm-8 col-xs-12 resume-right first-right">
         <h3>Web Developer</h3>
-        <p> Current day to day involves:</p>
+        <p> Day to day involved:</p>
         <ul>
           <li>Setting up LAMP servers</li>
           <li>Developing custom WordPress plugins and WooCommerce extensions</li>
           <li>Making changes and minor edits to WordPress sites</li>
-          <li>Debugging and issues with clients WordPress sites </li>
-          <li> Debug server issues </li>
+          <li>Debugging issues with clients WordPress sites </li>
+          <li> Debugging server issues </li>
         </ul>
 
         <p>Projects worked on include: </p>
@@ -321,6 +322,57 @@
 
       </div>
          
+    </section>
+    
+<!-- section Portfolio
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section id="sectionPortfolio">
+           
+          <div class="sectionTitle">
+
+              <h1>Latest projects</h1>
+
+              <ul class="filters filters-group">
+                <li class="filter is-checked" data-filter="*">All</li>
+                <li class="filter" data-filter=".brand">iOS</li> 
+              </ul>
+
+          </div>       
+
+        <!--GRID ITEMS-->
+
+     <!--GRID START-->
+
+    <div class="container">
+
+    <div id="isotopeGrid" class="mGrid row">
+
+        <div class="gutter-sizer"></div>
+
+            
+            <div class="grid-item no-pad-grid item-five brand fs">
+
+              <a class="image-modal" href="#image-modal1">
+
+                <img src="assets/images/tipmate.png" alt="">
+                  <h4>Tipmate</h4>
+                  <h6>iOS</h6>
+
+              </a>
+
+              <div id="image-modal1" class="mfp-hide modal-box">
+                  <img src="assets/images/tipmate.gif" alt="">
+                  <div class="modal-box-content">
+                    <h4>Tipmate</h4>
+                    <p>tip calculator</p>
+                  </div>
+              </div>         
+
+            </div>
+
+    </div>
+    </div>
+   
     </section>
 
 <!-- section Misc
@@ -537,11 +589,14 @@
       <!-- WOW ANIMATIONS -->
       <script src="assets/js/wow.min.js"></script>
       <script src="assets/js/jquery-parallax.js"></script>
+      <!-- Masonry Package -->
+      <script src="assets/js/isotope.pkgd.min.js"></script>
+      <script src="assets/js/isotope-jquery.js"></script>
+
+
       <script>
         new WOW().init();
       </script>
-
-
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -553,6 +608,15 @@ $(document).ready(function(){
 $('#sectionIntro').parallax({ "coeff":+0.5 });
 $('.imageIntro').parallax({ "coeff":+0.4 });
 })
+</script>
+
+<script>
+$(window).load(function(){
+var $container = $('#masonry-grid');
+  $container.isotope({
+      itemSelector: '.grid-item'
+  });
+});
 </script>
   </body>
 </html>
