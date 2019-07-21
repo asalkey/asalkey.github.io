@@ -1,10 +1,204 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+  
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap" rel="stylesheet">
+      
+    <title>Andrea Salkey</title>
+     <style>
+         body{
+            background-color:#fff;
+            color:#111318;
+            font-family: 'Montserrat', sans-serif;
+         }
+         
+         h1,h2{
+            font-family: 'Playfair Display', serif;
+         }
+         
+         .header{
+            text-align:center; 
+            margin-top:50px;
+         }
+         
+         .header h1{
+             font-size:60px;
+             font-weight:700;
+             letter-spacing:5px;
+         }
+         
+         .experience .job .company-info::after,.misc .job .company-info::after {
+            content: "";
+            height: 2px;
+            width: 30px;
+            display:block;
+            background: #3deaa4;
+             
+         }
+         
+         .experience h2,.portfolio h2,.misc h2,.education h2{
+             background: #3deaa4;
+             padding: 10px;
+             color: white;
+         }
+         
+         .education{
+             margin-bottom:50px;
+         }
+     </style>
   </head>
-  <body> 
-	<h1> No más </h1> 
+  <body>
+    <div class="container">
+        <div class="header">
+            <h1>Hello, I'm Andrea Salkey</h1>
+            <p> <span></span> Web && Mobile Developer </p>
+        </div>
+        <div id="work" class="experience">
+			<h2> Work Experience </h2>
+			<div class="job">
+				<h4>Founder</h4>
+				<p class="company-info">Killer Tofu LLC - Miami Beach, FL - 02/18-Present</p>
+                <ul>
+                    <li>Develop web applications</li>
+                    <li>Handle administrative duties</li>
+                    <li>Handle financial duties</li>
+                </ul>
+
+			</div>
+			<div class="job">
+				<h4>Web Developer</h4>
+				<p class="company-info">Codeable - Earth - 08/17-10/17</p>
+                <ul>
+                    <li> Fixed issues with WordPress sites </li>
+                </ul>
+			</div>
+			<div class="job">
+				<h4>Web Developer</h4>
+				<p class="company-info"> coolblueweb - Seattle, WA - 04/14-07/17 </p>
+				<p>Day to day involved:</p>
+				<ul>
+					<li>Setting up LAMP servers</li>
+					<li>Developing custom WordPress plugins and WooCommerce extensions</li>
+					<li>Making changes and minor edits to WordPress sites</li>
+					<li>Debugging issues with clients WordPress sites</li>
+					<li>Debugging server issues</li>
+				</ul>
+				<p>Projects worked on include:</p> 
+				<ul>
+					<li>Developed a Magento 1 module that adds a coupon code input to the one page checkout.</li>
+					<li>Developed a micro framework based off of Laravel packages to create a custom e-Commerce site.</li>
+					<li>Developed a CRUD Laravel application for a site that allows users to find contractors in their area.</li>
+					<li>Developed a WooCommerce subscription extension that allows the admin to enter new parts into the system by scanning a barcode and allows customers to select multiple subscriptions.</li>
+					<li>Developed a parts calculator widget for WordPress/WooCommerce that allows the user to enter the measurements of their basement and then adds the proper parts to their cart based off of the calculations. </li>
+				</ul>
+			</div>
+			<div class="job">
+				<h4>Web Developer</h4>
+				<p class="company-info"> Nimia - Seattle, WA - 11/13-01/14 </p>
+				<p>Day to day involved:</p>
+				<ul>
+				   <li> Added a new api endpoint using TastyPie to pull users data and displayed the data in the users profile using Backbone </li>
+				   <li> Added additional fields in the Django admin area </li>
+					<li> Made notifications clickable by adding an event action in the Backbone view</li>
+				</ul>
+			</div>
+			<div class="job">
+				<h4>Web Developer</h4>
+				<p class="company-info"> twelve23 - Seattle,WA - 01/13-11/13</p>
+				<ul>
+					<li>Tested mobile apps and websites</li>
+					<li>Provided technical support for the GradeGov website</li>
+					<li>Provided support and maintained the websites built on the CodeIgniter framework</li>
+					<li>Involved in client relation and client support. Spoke with clients about their projects and provided status reports.</li>
+					<li>Worked on adding new features to sites using PHP i.e feature integration allowing the user to enter their zip code and get back their district number.</li>
+					<li>Built custom PHP modules for PyroCMS</li>
+					<li>Developed a Windows 8 application for the Junior Achievement Program</li>
+					<li>Worked with multiple APIs i.e Google Maps, Stripe, Authorize.net</li>
+				</ul>
+			</div>
+			<div class="job">
+				<h4>Web Developer</h4>
+				<p class="company-info"> Freelance - Earth - 05/11-05/13</p>
+				<ul>
+					<li>Developed WordPress sites from mockups</li>
+					<li>Debug and fix issues with WordPress sites</li>
+					<li>Setup and configured WordPress sites</li>
+				</ul>
+			</div>
+			<div class="job">
+				<h4>Web Developer</h4>
+				<p class="company-info"> Camp Shane - Ferndale,NY - 06/11-12/11</p>
+				<ul>
+					<li>Transfered websites to WordPress</li>
+					<li>Developed email blasts</li>
+					<li>Preformed maintenance and updates to sites</li>
+				</ul>
+			</div>
+			<div class="job">
+				<h4>Web Development intern </h4>
+				<p class="company-info"> OMG National- Plantation,FL - 04/11</p>
+				<p>Developed portfolio for a photographer using JavaScript,HTML/CSS.</p>
+			</div>
+		</div>
+		<div id="misc" class="misc">
+			<h2> Misc. Experience </h2>
+			<div class="job">
+				<h4>Mentor</h4>
+				<p class="company-info">thinkful - Earth - 2014-present</p>
+				<p>Mentor students in the front-end development program</p>
+			</div>
+			<div class="job">
+			   <h4>Instructor and Teacher Assistant</h4>
+			   <p class="company-info">Girl Develop It - Seattle,WA - 2013-2015</p>
+			   <p>Taught introductory WordPress workshop. Assisted students with problems and questions during HTML/CSS workshop. </p>
+			</div>
+			<div class="job">
+			   <h4>Teacher Assistant</h4>
+               <p class="company-info">Code Fellows - Seattle,WA - 2013</p>
+			   <p>Assisted students with any problems and questions they had for the Ruby on Rails night classes program.</p>
+			</div>
+			<div class="job">
+				<h4>Teacher Assistant</h4>
+                <p class="company-info">Railsbridge - Seattle,WA - 2013</p>
+				<p>Assisted students in an introductory Ruby on Rails workshop.</p>
+			</div>
+			<div class="job">
+				<h4>Teacher Assistant/Curriculum Reviewer</h4>
+                <p class="company-info">Ada Developers Academy - Seattle,WA - 2013-2014</p>
+				<p>Reviewed curriculm and assisted students with questions they had during class.</p>
+			</div>
+			<div class="job">
+				<h4>Speaker</h4>
+                <p class="company-info">WordCamp - Seattle,WA - 2015</p>
+				<p>Did a talk on getting started with WooCommerce at the 2015 WordCamp in Seattle.</p>
+			</div>
+			<div class="job">
+				<h4>Speaker</h4>
+                <p class="company-info">Geek Girls Dinner - Seattle, WA - 2013</p>
+				<p>Spoke on a panel about getting into Web Development</p>
+			</div>
+		</div>
+		<div id="portfolio" class="portfolio">
+			<h2>Portfolio</h2>
+			<ul>	
+				<li><a target="_blank" href="https://youtu.be/LUsIvJXoQBg">Conway's game of life - Swift</a></li>
+				<li><a target="_blank" href="https://youtu.be/bub7dPXfP8U">Duck Duck Shoot - Phaser.js</a></li>
+                <li><a target="_blank" href="https://youtu.be/JMaBjJlXib0">Uno - C++</a></li>
+			</ul>
+		</div>
+		<div id="education" class="education">
+			<h2>Education</h2>
+			<ul>
+			    <li>ALM Digital Media Design - Harvard Extension School</li>
+				<li>BFA Web Design and Interactive Media - The Art Instiute of Tampa</li>
+                <li>Certificate in Ethical Hacking - University of Washington</li>
+			</ul>
+		</div>
+    </div>
   </body>
 </html>
