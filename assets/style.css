@@ -1,0 +1,38 @@
+body{
+	background-color:#fff;
+	color:#111318;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2{
+	font-family: 'Playfair Display', serif;
+}
+
+.header{
+	text-align:center; 
+	margin-top:50px;
+}
+
+.header h1{
+	font-size:60px;
+	font-weight:700;
+	letter-spacing:5px;
+}
+
+.experience .job .company-info::after,.misc .job .company-info::after {
+	content: "";
+	height: 2px;
+	width: 30px;
+	display:block;
+	background: #3deaa4;
+}
+
+.experience h2,.portfolio h2,.misc h2,.education h2{
+	background: #3deaa4;
+	padding: 10px;
+	color: white;
+}
+
+.education{
+	margin-bottom:50px;
+}
